@@ -3,8 +3,12 @@
 import React from 'react';
 import PageHeading from '../Components/PageHeading';
 import "../scss/market.scss";
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Welcome to the Fresh Super Market";
+    })
   return (
     <div className="container-fluid pad">
         <PageHeading pageTitle={"Welcome to Fresh Super Market"} />

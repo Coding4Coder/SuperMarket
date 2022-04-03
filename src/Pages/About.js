@@ -1,10 +1,13 @@
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../scss/market.scss";
 import PageHeading from '../Components/PageHeading';
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About the Fresh Super Market";
+    })
   return (
     <div className="container-fluid pad">
          <PageHeading pageTitle={"About Fresh Super Market"} />
