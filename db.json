@@ -1,0 +1,39 @@
+{
+    "supermarket": [
+        {
+            "id": 1,
+            "itemname" : "Vegetables",
+            "price" : 500,
+            "quantity": "5 kg",
+            "instock" : "Yes"
+        },
+        {
+            "id": 2,
+            "itemname" : "Rice",
+            "price" : 1500,
+            "quantity": "20 kg",
+            "instock" : "Yes"
+        },
+        {
+            "id": 3,
+            "itemname" : "Oil",
+            "price" : 800,
+            "quantity": "2 kg",
+            "instock" : "No"
+        },
+        {
+            "id": 4,
+            "itemname" : "Milk",
+            "price" : 100,
+            "quantity": "4 kg",
+            "instock" : "Yes"
+        },
+        {
+            "id": 5,
+            "itemname" : "Bread",
+            "price" : 70,
+            "quantity": "1",
+            "instock" : "No"
+        }
+    ]
+}
