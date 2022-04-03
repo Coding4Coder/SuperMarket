@@ -35,5 +35,19 @@
             "quantity": "1",
             "instock" : "No"
         }
+    ],
+    "slickImg" :[
+        {
+            "title": "Direct from farm",
+            "photo":"/img/slider/img1.jpg"
+        },
+        {
+            "title": "Great Items",
+            "photo":"/img/slider/img1.jpg"
+        },
+        {
+            "title": "Always Fresh",
+            "photo":"/img/slider/img1.jpg"
+        }
     ]
 }
