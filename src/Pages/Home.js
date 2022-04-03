@@ -1,26 +1,41 @@
 
 
-import React from 'react';
-import PageHeading from '../Components/PageHeading';
+import React, { useEffect, useState } from 'react';
 import "../scss/market.scss";
-import { useEffect } from 'react';
+import PageHeading from '../Components/PageHeading';
+import axios from 'axios';
 
 const Home = () => {
+  const [homeText, setHomeText] = useState([]);
+
+    const loadHomePageText = async () => {
+      let result = await axios.get("http://localhost:5000/homepage/");
+      setHomeText(result.data);
+    }
+      console.log(homeText);
+  
+
     useEffect(() => {
-        document.title = "Welcome to the Fresh Super Market";
-    })
+      loadHomePageText();
+        document.title = "Welcome to Fresh Super Market";
+    },[]);
+
   return (
     <div className="container-fluid pad">
-        <PageHeading pageTitle={"Welcome to Fresh Super Market"} />
-
+         <PageHeading pageTitle={"Welcome Fresh Super Market"} />
       <div className="main-container text-center">
-            <h2 className="display-6  pad-b">Delivering fast, fresh food to your door step</h2>
-            <p>
-            Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <p>
-            Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          
+             
+            {
+            homeText.map((homePage) => (
+              <>
+             <h2 className="display-6  pad-b"> {homePage.hometitle}</h2>
+              <p> {homePage.hometext}</p>
+              </>
+              ))
+            }
+          
       </div>
-      
     </div>
   )
 }

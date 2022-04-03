@@ -7,6 +7,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import About from './Pages/About';
 import Items from './Pages/Items';
 import View from './Pages/Action/View';
+import AddItem from './Pages/Action/AddItem';
+import EditItem from './Pages/Action/Edit';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/about/" element= { <About /> } />
           <Route path="/items/" element= { <Items /> } />
           <Route path="/item/view/:id" element= { <View /> } />
+          <Route path="/item/edit/:id" element= { <EditItem /> } />
+          <Route path="/item/add/" element= { <AddItem /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

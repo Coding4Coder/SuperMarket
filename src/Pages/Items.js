@@ -14,7 +14,7 @@ const Items = () => {
     const loadSuperMarketData = async () => {
         await axios.get("http://localhost:5000/supermarket/")
         .then((response) => {
-                setItems(response.data)
+                setItems(response.data.reverse());
         })
     }
     console.log(items);
@@ -25,9 +25,10 @@ const Items = () => {
     }, []);
 
   return (
-    <div className="container-fluid pad">
+    <div className="container-fluid pad text-center">
 
     <PageHeading pageTitle={"Available Items in Fresh Super Market"} />
+        <NavLink className="btn btn-primary btn-center" to="/item/add/">Add Item</NavLink>
 
   <div className="main-container text-center">
   <div className="table-responsive">
@@ -55,7 +56,9 @@ const Items = () => {
                                <NavLink to={`/item/view/${item.id}`}>
                                   <FaRegEye className="faIcon" />
                                 </NavLink>
-                                <FaEdit className="faIcon" />
+                                <NavLink to={`/item/edit/${item.id}`} >
+                                  <FaEdit className="faIcon" />
+                                </NavLink>
                                 <FaTrashAlt className="faIcon" />
                             </td>
 
