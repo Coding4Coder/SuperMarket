@@ -24,6 +24,11 @@ const Items = () => {
         document.title = "Items in the Fresh Super Market";
     }, []);
 
+    const deleteItem = async (id) => {
+        await axios.delete(`http://localhost:5000/supermarket/${id}`);
+        loadSuperMarketData();
+    }
+
   return (
     <div className="container-fluid pad text-center">
 
@@ -59,7 +64,9 @@ const Items = () => {
                                 <NavLink to={`/item/edit/${item.id}`} >
                                   <FaEdit className="faIcon" />
                                 </NavLink>
-                                <FaTrashAlt className="faIcon" />
+                              
+                                <FaTrashAlt className="faIcon" onClick={()=>deleteItem(item.id)} />
+                               
                             </td>
 
                         </tr>

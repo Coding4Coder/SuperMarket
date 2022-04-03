@@ -30,6 +30,7 @@ const Home = () => {
             homeText.map((homePage) => (
               <>
              <h2 className="display-6  pad-b"> {homePage.hometitle}</h2>
+             <p> {homePage.photo}</p>
               <p> {homePage.hometext}</p>
               </>
               ))
