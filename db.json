@@ -5,49 +5,84 @@
       "itemname": "Vegetables",
       "price": 500,
       "quantity": "5",
-      "instock": "Yes"
+      "instock": "50"
     },
     {
       "id": 2,
       "itemname": "Rice",
       "price": 1500,
       "quantity": "20",
-      "instock": "Yes"
+      "instock": "20"
     },
     {
       "id": 3,
-      "itemname": "Oil",
+      "itemname": "Regular Oil ",
       "price": 800,
       "quantity": "2",
-      "instock": "No"
+      "instock": "100"
     },
     {
       "id": 4,
       "itemname": "Milk",
       "price": 100,
       "quantity": "4",
-      "instock": "Yes"
+      "instock": "400"
     },
     {
       "itemname": "Bread",
       "price": "450",
       "quantity": "5",
-      "instock": "Yes",
+      "instock": "150",
       "id": 5
     },
     {
       "itemname": "Orange",
       "price": "250",
       "quantity": "5",
-      "instock": "No",
+      "instock": "500",
       "id": 6
     },
     {
       "itemname": "Ice-cream",
       "price": "175",
       "quantity": "1",
-      "instock": "Yes",
+      "instock": "5",
       "id": 7
+    },
+    {
+      "itemname": "Chocolate",
+      "price": "500",
+      "quantity": "30",
+      "instock": "50",
+      "id": 8
+    },
+    {
+      "itemname": "Dark Chocolate",
+      "price": "450",
+      "quantity": "20",
+      "instock": "90",
+      "id": 9
+    },
+    {
+      "itemname": "Full Cream Milk",
+      "price": "50",
+      "quantity": "8",
+      "instock": "100",
+      "id": 3
+    },
+    {
+      "itemname": "Tond Milk",
+      "price": "23",
+      "quantity": "44",
+      "instock": "50",
+      "id": 11
+    },
+    {
+      "itemname": "Olive Oil",
+      "price": "800",
+      "quantity": "15",
+      "instock": "8",
+      "id": 12
     }
   ],
   "slickImg": [
@@ -67,22 +102,22 @@
   "about": [
     {
       "title": "Features of a supermarket",
-      "photo": "/img/slider/img1.jpg",
       "displaytext": "A large retailing business unit, selling mainly food and groceries on the basis of the low marginal gain. It has a wide variety and varied assortment of goods. It lays emphasis on self service.  A supermarket is a large retailing shop where goods are displayed in such a way that buyers select products for themselves. Buyers collect their product off the shelves invariably in a trolley and get them billed by the counter clerk and Laptop."
     },
     {
       "title": "Advantages of Supermarkets",
-      "photo": "/img/slider/img2.jpg",
       "displaytext": "Prices are comparatively lower. Supermarkets are located in busy centres. Buyers get quality goods at lower prices. Profit margin is lower, Customers get a wide assortment of goods, Shopping is convenient. There is no risk of bad debts."
     }
   ],
   "homepage": [
     {
       "hometitle": "A Great Supermarkets ",
+      "photo": "../img/slider/img1.jpg",
       "hometext": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. featuring Sass variables and mixins, responsive grid system, extensive prebuilt component."
     },
     {
       "hometitle": "Best Service Offer...",
+      "photo": "../img/slider/img2.jpg",
       "hometext": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.Quickly design and customize responsive mobile-first sites with Bootstrap, the world most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."
     }
   ]

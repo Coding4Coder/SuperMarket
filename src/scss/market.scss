@@ -58,6 +58,10 @@ h4{
 .pad-r{
     padding-right: .5rem !important;
 }
+.pad-l-r{
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+}
 .mar-r{
     margin-right: 2rem !important;
 }
@@ -158,4 +162,42 @@ table tr{
 }
 .ul-col-2{
     columns: 2;
+}
+.homeImg{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.model-pop{
+    max-width: 700px !important;
+    min-height: 250px;
+    position: fixed;
+    left: 50%;
+    top: 50;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    .btn-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .btn-close:hover{
+      background-color: rgb(255, 0, 106) !important;
+  }
+}
+.btn-model{
+    width: 120px !important;
+}
+
+.overlayMask{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgb(0, 0, 0, 0.7);
+}
+.text-red{
+    color: #3f0021;
+    font-weight: 600;
 }

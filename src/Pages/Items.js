@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom';
 const Items = () => {
 
     const [items, setItems] = useState([]);
+    const [searchItem, setSearchItem] = useState();
 
     const loadSuperMarketData = async () => {
         await axios.get("http://localhost:5000/supermarket/")
@@ -29,11 +30,65 @@ const Items = () => {
         loadSuperMarketData();
     }
 
+    // get total items
+    const getTotalItems = items.reduce((initVal, currVal) => {
+        return initVal + parseInt(currVal.instock);
+    }, 0);
+
+    // search bar
+    const onChangeHandler = (e) => {
+        setSearchItem(e.target.value);
+    }
+
+    const searchHandler = async (e) => {
+        e.preventDefault();
+        let result = await axios.get(`http://localhost:5000/supermarket?q=${searchItem}`);
+        setItems(result.data);
+        setSearchItem("");
+    }
+    //reset search
+
+    const resetHandler = () => {
+        loadSuperMarketData();
+    }
+
+    // get low stock item
+    const getLowStockItems = items.filter((lowStock) => {
+            return lowStock.instock < 10;
+    }).map(iname => iname.itemname).join(", ");
+
+    const getLowStockItemsLength = items.filter((lowStock) => {
+        return lowStock.instock < 10;
+        }).length;
+
   return (
     <div className="container-fluid pad text-center">
 
     <PageHeading pageTitle={"Available Items in Fresh Super Market"} />
-        <NavLink className="btn btn-primary btn-center" to="/item/add/">Add Item</NavLink>
+    <div className="row g-0">
+        <div className="col-sm-4">
+            <NavLink className="btn btn-primary btn-center" to="/item/add/">Add Item</NavLink>
+            </div>
+        <div className="col-sm-4 text-right">
+            <input 
+            className="form-control"
+            type="text" 
+            placeholder="Search Item" 
+            autoComplete="off"
+            required
+            value={searchItem}
+            onChange={onChangeHandler}
+            />
+        </div>
+        <div className="col-sm-4 text-left pad-l-r">
+          <button className="btn btn-secondary" onClick={ searchHandler }>Search</button>
+          <span className="pad-l-r">
+          <button className="btn btn-secondary" onClick={ resetHandler }>Reset</button>
+          </span>
+        </div>
+    </div>
+        
+      
 
   <div className="main-container text-center">
   <div className="table-responsive">
@@ -68,14 +123,26 @@ const Items = () => {
                                 <FaTrashAlt className="faIcon" onClick={()=>deleteItem(item.id)} />
                                
                             </td>
-
                         </tr>
-
                   ))
               }
-            
           </tbody>
         </table>
+        
+        </div>
+        <div className="row">
+             <div className="col-sm-4">
+             <span className="text-red">Total items in stock :</span> { getTotalItems }
+             </div>
+             <div className="col-sm-4">
+             <span className="text-red">Items in low stock :</span> 
+                <span className="pad-l-r">{ getLowStockItemsLength }</span>
+                { getLowStockItems }
+             </div>
+             <div className="col-sm-4">
+           
+             </div>
+           
         </div>
   </div>
       
