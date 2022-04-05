@@ -201,3 +201,26 @@ table tr{
     color: #3f0021;
     font-weight: 600;
 }
+.to-do-list{
+    background: #ebcedc;
+    color: #000000;
+    padding: 1rem;
+    text-align: left;
+    
+}
+.iqa{
+    .imgQ{
+        width: 100%;
+        height: auto;
+        padding-top: .5rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .top-logo{
+        text-align: center;
+    }
+    .top-menu {
+        text-align: center;
+        padding: 5px 0 37px 0 !important;
+    }
+ }

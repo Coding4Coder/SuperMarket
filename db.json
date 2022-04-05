@@ -101,17 +101,17 @@
   ],
   "about": [
     {
-      "title": "Features of a supermarket",
+      "title": "Features of a Super Market",
       "displaytext": "A large retailing business unit, selling mainly food and groceries on the basis of the low marginal gain. It has a wide variety and varied assortment of goods. It lays emphasis on self service.  A supermarket is a large retailing shop where goods are displayed in such a way that buyers select products for themselves. Buyers collect their product off the shelves invariably in a trolley and get them billed by the counter clerk and Laptop."
     },
     {
-      "title": "Advantages of Supermarkets",
+      "title": "Advantages of Super Market",
       "displaytext": "Prices are comparatively lower. Supermarkets are located in busy centres. Buyers get quality goods at lower prices. Profit margin is lower, Customers get a wide assortment of goods, Shopping is convenient. There is no risk of bad debts."
     }
   ],
   "homepage": [
     {
-      "hometitle": "A Great Supermarkets ",
+      "hometitle": "A Great Super Market ",
       "photo": "../img/slider/img1.jpg",
       "hometext": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. featuring Sass variables and mixins, responsive grid system, extensive prebuilt component."
     },
@@ -120,5 +120,23 @@
       "photo": "../img/slider/img2.jpg",
       "hometext": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins. featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.Quickly design and customize responsive mobile-first sites with Bootstrap, the world most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."
     }
+  ],
+  "interviewQuestions": [
+      {
+      "questionTitle": "What is ReactJS?",
+      "questionAnswer": "This is one of the first ReactJS interview questions. You need to be able to explain that React is a JavaScript-based UI library. It was developed at Facebook with the purpose of creating interactive and reusable UI components.  React is currently one of the most popular JavaScript framework used for handling the presentation layer for the web and mobile apps.",
+      "qImg": ""
+     },
+     {
+        "questionTitle": "Name some advantages of React.",
+        "questionAnswer": "High efficiency: React is known for its flexibility and efficiency because of its own virtual DOM that it creates. It automatically calculates the changes needed to be made in DOM thus avoiding expensive DOM options and making regular updates whenever needed. Easier JavaScript writing: Thanks to the JSX syntax which allows you to mix HTML with JavaScript, writing is much easier with React. The user can simply drop a bit of HTML in the render function without having to concatenate strings and React then turns those HTML bits into functions with its JSXTransformer.  A variety of developer tools: in order to get the most out of React.js, you should install its official browser extension. It comes in quite handy, especially for debugging the app. It gives you a direct look into the virtual DOM as if you were browsing a regular DOM tree in the elements panel.  Great for SEO: Most of the JavaScript frameworks are not particularly search engine friendly, but that is not the case with React. Thanks to its unique virtual DOM that is rendered to the browser as a regular page, the search engines will not encounter the same issues as with reading other JavaScript-heavy apps.  UI Test Cases: It is very easy to write UI test cases thanks to the virtual DOM in JavaScript.",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "Controlled and uncontrolled components",
+        "questionAnswer": "When we talk about Controlled and Uncontrolled Components, it is  always referring to components which are handling forms or form inputs in them. // In a controlled component, form data is handled by a React component. Whereas in uncontrolled components, form data is handled by the DOM itself. // Usage of Component State is a must for controlled components. Use of state is completely optional for uncontrolled components, but one must use Refs in it.//With controlled components, we can validate as the input is being changed but the same is not possible with uncontrolled components.",
+        "qImg": "../img/question/control.jpg"
+       }
+
   ]
 }

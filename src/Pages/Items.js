@@ -130,6 +130,12 @@ const Items = () => {
         </table>
         
         </div>
+        <div className="to-do-list"> <h6>To Do List:</h6>
+            <ul>
+                <li>How many items are in stock? </li>
+                <li>How many items are in low stock? </li>
+            </ul>
+        </div>
         <div className="row">
              <div className="col-sm-4">
              <span className="text-red">Total items in stock :</span> { getTotalItems }
