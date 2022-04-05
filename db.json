@@ -136,6 +136,41 @@
         "questionTitle": "Controlled and uncontrolled components",
         "questionAnswer": "When we talk about Controlled and Uncontrolled Components, it is  always referring to components which are handling forms or form inputs in them. // In a controlled component, form data is handled by a React component. Whereas in uncontrolled components, form data is handled by the DOM itself. // Usage of Component State is a must for controlled components. Use of state is completely optional for uncontrolled components, but one must use Refs in it.//With controlled components, we can validate as the input is being changed but the same is not possible with uncontrolled components.",
         "qImg": "../img/question/control.jpg"
+       },
+       {
+        "questionTitle": "What is JSX?",
+        "questionAnswer": "JSX is an XML/HTML-like syntax used by React for extending ECMAScript in order for the XML/HTML-like text to coexist with JavaScript/React code. The syntax is intended to be used by preprocessors (i.e., transpilers like Babel) to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "What is the difference between createElement and cloneElement?",
+        "questionAnswer": "This is one of the quite logical React interview questions and answers. Basically, as the name suggests, createElement what React uses to create React Elements, cloneElement, on the other hand, is used to clone an element and pass it new props. Might seem quite obvious, but it is still one of the top 50 interview questions and answers.",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "What is the difference between state and props?",
+        "questionAnswer": "In a React component, props are variables passed to it by its parent component. State on the other hand is still variables, but directly initialized and managed by the component.",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "",
+        "questionAnswer": "",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "",
+        "questionAnswer": "",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "",
+        "questionAnswer": "",
+        "qImg": ""
+       },
+       {
+        "questionTitle": "",
+        "questionAnswer": "",
+        "qImg": ""
        }
 
   ]
