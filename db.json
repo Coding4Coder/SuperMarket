@@ -153,23 +153,23 @@
         "qImg": ""
        },
        {
-        "questionTitle": "",
-        "questionAnswer": "",
+        "questionTitle": "What is Redux?",
+        "questionAnswer": "The basic idea of Redux is that the entire application state is kept in a single store which is simply a JavaScript object. If you want to change the state, you need to fire actions from your application and then write reducers for these actions that modify the state. The entire state transition is kept inside reducers and isn’t supposed to have any side effects.",
         "qImg": ""
        },
        {
-        "questionTitle": "",
-        "questionAnswer": "",
+        "questionTitle": "What is the difference between React Native and React?",
+        "questionAnswer": "React is a JavaScript library and it supports both front-end web and being run on the server and it is commonly used for building user interfaces and web applications.  React Native, however, is a mobile framework that compiles to native app components. It allows us to build native mobile applications for Windows, Android, and iOS in JavaScript while we can use ReactJS to build our components.",
         "qImg": ""
        },
        {
-        "questionTitle": "",
-        "questionAnswer": "",
+        "questionTitle": "What are refs in React? When to use them?",
+        "questionAnswer": "Refs are used for storing the reference of element or component returned by the component render() configuration function. In most cases, they should be avoided although there are some instances when using them is useful, such as: Managing focus, text selection, or media playback.",
         "qImg": ""
        },
        {
-        "questionTitle": "",
-        "questionAnswer": "",
+        "questionTitle": "What is the difference between DOM and virtual DOM in React.js?",
+        "questionAnswer": "DOM aka Document Object Model is an abstraction of structured code (HTML). Dom and HTML code are interrelated as the elements of HTML are known as nodes of DOM. It defines a structure where users modify the content present in the structure in any way they want (create, edit, alter, modify etc.). Basically, HTML is a text, DOM is an in-memory representation of this text.  Virtual DOM is a representation of DOM objects like a lightweight copy. It is used and provided for free by React.js",
         "qImg": ""
        }
 
