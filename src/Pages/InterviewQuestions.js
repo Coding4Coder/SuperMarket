@@ -10,6 +10,8 @@ import {
     AccordionItemPanel
     } from "react-accessible-accordion";
 import axios from 'axios';
+import {NavLink} from "react-router-dom";
+import {FaAngleRight} from "react-icons/fa";
 
 const InterviewQuestions = () => {
     
@@ -33,6 +35,9 @@ useEffect(() =>{
   return (
     <div className="container-fluid pad">
     <PageHeading pageTitle={"Interview Questions"} />
+    <div className="flx-container">
+        <NavLink to="/interview-questions/letsdoit/" className="">Let's do it <FaAngleRight /> </NavLink>
+    </div>
  <div className="main-container iqa">
      <Accordion>
          {

@@ -10,6 +10,7 @@ import View from './Pages/Action/View';
 import AddItem from './Pages/Action/AddItem';
 import EditItem from './Pages/Action/Edit';
 import InterviewQuestions from './Pages/InterviewQuestions';
+import LetsDoIT from './Pages/LetsDoIT';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/item/view/:id" element= { <View /> } />
           <Route path="/item/edit/:id" element= { <EditItem /> } />
           <Route path="/interview-questions/" element= { <InterviewQuestions /> } />
+          <Route path="/interview-questions/letsdoit/" element= { <LetsDoIT /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

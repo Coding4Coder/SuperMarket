@@ -133,7 +133,7 @@ const Items = () => {
         <div className="to-do-list"> <h6>To Do List:</h6>
             <ul>
                 <li>How many items are in stock? </li>
-                <li>How many items are in low stock? </li>
+                <li>How many items are in low stock? (if items is less than 10) </li>
             </ul>
         </div>
         <div className="row">

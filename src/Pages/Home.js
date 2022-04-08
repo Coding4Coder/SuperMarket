@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <div className="container-fluid pad text-center">
          <PageHeading pageTitle={"Welcome to Fresh Super Market"} />
-         <button className="btn btn-primary" onClick={ openModal }>Best Pice Guarantee</button>
+         <button className="btn btn-primary" onClick={ openModal }>Best Price Guarantee</button>
          <BestPrice open={isOpen} close={closeModel}>
            <h3 className="display-6 text-center" > Best Price Guarantee !</h3>
             <ul>
