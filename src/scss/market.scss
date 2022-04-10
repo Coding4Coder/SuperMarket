@@ -11,9 +11,7 @@
        width: 200px;
        height: auto;
     }
-  a{
-      margin: 0 .51rem !important;
-  }
+  
 }
 footer{
     background: rgb(2, 33, 75);
@@ -84,10 +82,9 @@ table tr{
     color:rgb(0, 153, 158)
 }
 .active{
-    background: rgb(186, 0, 127) !important;
-    color: rgb(255, 255, 255)  !important;
-    border: none  !important;
+    color:  rgb(186, 0, 127) !important;
     box-shadow: none !important;
+    border-bottom: 1px solid  rgb(186, 0, 127) !important;
 }
 .main-container{
     background: rgb(241, 241, 241);
@@ -261,4 +258,46 @@ table tr{
 .txtTitle{
     font-size: 2rem;
     color: #9a005a;
+}
+.stand-out, .accordion__panel p{
+    font-size: 1rem;
+    color: #050505;
+    background: #e6deea;
+    padding: 1rem;
+}
+.errorMsg{
+    width: 90%;
+    margin: 1em auto;
+    padding: 1rem;
+    border-radius: 15px;
+    P{
+        color: rgb(0, 0, 0);
+        background: #fcbac6;
+    }
+}
+.item-img img{
+    width: 80px;
+    height: auto;
+}
+.my-row{
+    background: #e6deea;
+    div{
+        border-top:1px solid #aeacac;
+    }
+}
+.nav-link {
+    padding: 0.2rem 0.51rem !important;
+}
+
+.msgBox{
+    width: 200px;
+    margin: 1em auto;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #cac8c9;
+    color: #000000;
+}
+.bdr-btm{
+    border-bottom: 1px solid #ccc;
+    padding: .5rem;
 }

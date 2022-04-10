@@ -11,12 +11,16 @@ const Items = () => {
 
     const [items, setItems] = useState([]);
     const [searchItem, setSearchItem] = useState();
-
+;
     const loadSuperMarketData = async () => {
         await axios.get("http://localhost:5000/supermarket/")
         .then((response) => {
                 setItems(response.data.reverse());
         })
+        .catch((error) =>{
+                //alert(error);
+                    document.querySelector(".errorMsg").innerHTML = `<p>Data not loaded, ${error}</p>`;  
+        });
     }
     console.log(items);
 
@@ -65,6 +69,7 @@ const Items = () => {
     <div className="container-fluid pad text-center">
 
     <PageHeading pageTitle={"Available Items in Fresh Super Market"} />
+    <div className="errorMsg"></div>
     <div className="row g-0">
         <div className="col-sm-4">
             <NavLink className="btn btn-primary btn-center" to="/item/add/">Add Item</NavLink>
