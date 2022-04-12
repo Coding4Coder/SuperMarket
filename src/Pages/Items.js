@@ -97,6 +97,10 @@ const Items = () => {
 
   <div className="main-container text-center">
   <div className="table-responsive">
+  {
+
+items.length == 0 ? <div> Data error ... </div> :
+
         <table className="table align-middle table-striped table-hover">
           <thead>
             <tr>
@@ -109,7 +113,7 @@ const Items = () => {
             </tr>
           </thead>
           <tbody>
-              {
+          {
                   items.map((item, index) => (
                         <tr key={index}>
                             <td>{ index+1 }</td>
@@ -130,10 +134,11 @@ const Items = () => {
                             </td>
                         </tr>
                   ))
-              }
+            }
+            
           </tbody>
         </table>
-        
+     }
         </div>
         <div className="to-do-list"> <h6>To Do List:</h6>
             <ul>
@@ -155,6 +160,8 @@ const Items = () => {
              </div>
            
         </div>
+
+        
   </div>
       
     </div>

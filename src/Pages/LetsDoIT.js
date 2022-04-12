@@ -9,11 +9,15 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { NavLink } from "react-router-dom";
+import Amazon from "../Components/Amazon";
+import War from "../Components/War";
 
 const LetsDoIT = () => {
 
     const[product, setProduct] = useState([]);
     const[allValue, setAllValue] = useState([]);
+
+    const[moviename, setMoviename] = useState("");
 
     const loadProductsData = async () => {
        
@@ -74,45 +78,14 @@ const loadMultiApiData = async () => {
     document.getElementById("showContent").innerHTML = disContent;
   };
 
-
-  // Array
-let fruits = ["Mango", "Apple", "Banana", "Kiwi", "Water Melon"];
-
-//map
- const myMapFunc = fruits.map((fruit, index) => {
-     return (
-        <table>
-            <tr>
-                <td>{index+1}</td>
-                <td>{fruit}</td>
-            </tr>
-        </table>
-     )
- });
-
- // splice
-//  let mySpliceFruit = fruits.splice(1, 2, "Grapes", "Papaya");
-//  console.log(fruits);
-//  console.log(mySpliceFruit);
-let fruits2 = ["Mango", "Apple", "Banana", "Kiwi", "Water Melon"];
-let mySliceFruit = fruits2.slice(2, 4);
-console.log(fruits2);
-console.log(mySliceFruit);
-
-// filter
-
-let num = ["20", "30", "40", "50", "60"];
-let myFilterNum = num.filter((number)=>{
-    return number < 40;
-});
-console.log(myFilterNum);
+// Turnary Operator
 
 
-let fruits3 = ["Mango", "Apple", "Banana", "Kiwi", "Water Melon"];
-let frt = fruits3.filter((myfrt) =>{
-    return myfrt.includes("Apple");
-})
-console.log(fruits3.includes("Mango"));
+const inputChange = (e) => {
+    setMoviename( e.target.value)
+}
+
+console.log("helli movie:", moviename);
 
 
   return (
@@ -120,7 +93,7 @@ console.log(fruits3.includes("Mango"));
       <PageHeading pageTitle={"Let's Do It.. Interview Questions"} />
       <div className="flx-containe text-center">
       <nav class="nav justify-content-center">
-        <NavLink className="nav-link" to="/interview-questions/child-child/">Passing Data Child to Parent</NavLink> |
+        <NavLink className="nav-link" to="/interview-questions/child-parent/">Passing Data Child to Parent</NavLink> |
         <NavLink className="nav-link" to="/interview-questions/parent-child/">Parent to Child</NavLink> |
         <NavLink className="nav-link" to="/">Link</NavLink> |
         <NavLink className="nav-link" to="/">Disabled</NavLink>
@@ -162,7 +135,7 @@ console.log(fruits3.includes("Mango"));
               <AccordionItemPanel>
              
                 <p>Map Methos:</p>
-               <div id="dvMap">{myMapFunc}</div>
+               map(), reduce(), filter(), splice(),slice(), push(), pop(), unShift(), shift(), includes(), freeze(), seal(), join()
 
               </AccordionItemPanel>
           </AccordionItem>
@@ -364,6 +337,42 @@ console.log(fruits3.includes("Mango"));
           </p>
           </AccordionItemPanel>
           </AccordionItem>
+
+          <AccordionItem>
+              <AccordionItemHeading>
+                  <AccordionItemButton> Pure component</AccordionItemButton>
+              </AccordionItemHeading>
+          <AccordionItemPanel>
+          stop to re-rendering the component, used in class based component and in Functional based component we use  called React.Memo();
+          </AccordionItemPanel>
+          </AccordionItem>
+   
+    
+          <AccordionItem>
+              <AccordionItemHeading>
+                  <AccordionItemButton>How to conditionally render the component</AccordionItemButton>
+              </AccordionItemHeading>
+          <AccordionItemPanel>
+              using the Turnary operator - <br/>
+              condition ? true : false <br/> <br/>
+              If you type here movie name amazon then amazon component will be display as our first condition is true since we passed variable value '<strong>amazon</strong>' and on the otherhand if you enter anyother value then WAR movie component will be shown as the first condition is False..<br/> <br/>
+              <p>
+              <form>
+                   <input type="text" name="moviename" value={moviename} 
+                   onChange={inputChange } autoComplete="off"
+                   placeholder="type movie name here like 'amazon' or any" />
+
+                  {/* <button className="btn btn-primary">Get the Movie</button> */}
+             </form>
+
+              </p>
+              {
+                  (moviename == "amazon" ? <Amazon /> : <War />)
+              }
+
+          </AccordionItemPanel>
+          </AccordionItem>
+
         </Accordion>
 
       </div>

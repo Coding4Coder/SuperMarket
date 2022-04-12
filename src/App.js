@@ -13,6 +13,7 @@ import InterviewQuestions from './Pages/InterviewQuestions';
 import LetsDoIT from './Pages/LetsDoIT';
 import MyParent from './Pages/MyParent';
 import UsersParent from "./Pages/ParentToChild/UsersParent";
+import Bills from './Pages/Bills';
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
           <Route path="/item/add/" element= { <AddItem /> } />
           <Route path="/interview-questions/" element= { <InterviewQuestions /> } />
           <Route path="/interview-questions/letsdoit/" element= { <LetsDoIT /> } />
-          <Route path="/interview-questions/child-child/" element= {<MyParent /> } />
+          <Route path="/interview-questions/child-parent/" element= {<MyParent /> } />
           <Route path="/interview-questions/parent-child/" element= { <UsersParent /> } />
+          <Route path="/bills/" element= { <Bills /> } />
         </Routes>
         <Footer />
       </BrowserRouter>
