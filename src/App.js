@@ -14,6 +14,7 @@ import LetsDoIT from './Pages/LetsDoIT';
 import MyParent from './Pages/MyParent';
 import UsersParent from "./Pages/ParentToChild/UsersParent";
 import Bills from './Pages/Bills';
+import Counter from './Components/PureComponenet/Counter';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/interview-questions/child-parent/" element= {<MyParent /> } />
           <Route path="/interview-questions/parent-child/" element= { <UsersParent /> } />
           <Route path="/bills/" element= { <Bills /> } />
+          <Route path="/counter/" element= { <Counter /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -17,6 +17,7 @@ const TopHeader = () => {
                 <NavLink className="nav-link" to="/items/">Items</NavLink>
                 <NavLink className="nav-link" to="/interview-questions/">Interview Questions</NavLink>
                 <NavLink className="nav-link" to="/bills/">Bills</NavLink>
+                <NavLink className="nav-link" to="/counter/">Counter</NavLink>
             </nav>
             </div>
 
